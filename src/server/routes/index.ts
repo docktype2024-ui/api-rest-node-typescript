@@ -1,0 +1,9 @@
+import { Router } from 'express';
+
+const router = Router();
+
+router.get('/teste' , (req,res ) => {
+    return res.send('ola dev');
+});
+
+export {router};
