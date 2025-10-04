@@ -10,8 +10,7 @@ router.get('/' , (req,res ) => {
 });
 
 router.post('/cidades' , 
-    CidadesController.createBodyValidator , 
-    CidadesController.createQueryValidator ,
+    CidadesController.createValidation ,
     CidadesController.create
 );
 
